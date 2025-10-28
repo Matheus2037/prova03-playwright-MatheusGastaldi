@@ -25,7 +25,7 @@ export default class CadastroPage extends BasePage {
     await this.toolShapeElements.getCampoMensagem().fill(mensagem);
   }
 
-  async anexarArquivo(caminhoArquivo = '../playwright-e2e/src/support/fixtures/test.txt') {
+  async anexarArquivo(caminhoArquivo = '../prova03-playwright-MatheusGastaldi/src/support/fixtures/test.txt') {
     await this.toolShapeElements.getCampoAnexo().setInputFiles(caminhoArquivo);
   }
 
