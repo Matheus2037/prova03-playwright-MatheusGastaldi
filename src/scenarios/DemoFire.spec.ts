@@ -20,4 +20,10 @@ test.describe('Testes funcionais no formulário de contato', () => {
     await demoFirePage.enviarFormulario();
     await demoFirePage.validarEnvio();
   });
+
+  test('Validar retorno ao não informar um Email para o formulário', async () => {
+    await demoFirePage.preencherCamposMenosEmail();
+    await demoFirePage.enviarFormulario();
+    await demoFirePage.validarEnvioSemEmail();
+  });
 });
